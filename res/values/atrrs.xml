@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PressEffect">
+        <attr name="peShape">
+            <enum name="rect" value="0" />
+            <enum name="round_rect" value="1" />
+            <enum name="oval" value="2" />
+        </attr>
+        <attr name="peRoundSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

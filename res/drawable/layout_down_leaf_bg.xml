@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <color android:color="#8FD74F" ></color>
+    </item>
+    <item>
+        <selector>
+            <item
+                android:drawable="@color/half_transparent"
+                android:state_pressed="true"/>
+            <item android:drawable="@color/normally_transparent"/>
+        </selector>
+    </item>
+
+</layer-list>
