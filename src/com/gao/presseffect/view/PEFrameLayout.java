@@ -12,6 +12,10 @@ import com.gao.presseffect.PEDelegate;
 public class PEFrameLayout extends FrameLayout {
 	private final PEDelegate peDelegate = new PEDelegate(this);
 
+	{
+		setWillNotDraw(false);
+	}
+
 	public PEDelegate getDelegate() {
 		return peDelegate;
 	}

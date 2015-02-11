@@ -11,6 +11,9 @@ import com.gao.presseffect.PEDelegate;
 @SuppressLint("NewApi")
 public class PELinearLayout extends LinearLayout {
 	private final PEDelegate peDelegate = new PEDelegate(this);
+	{
+		setWillNotDraw(false);
+	}
 
 	public PEDelegate getDelegate() {
 		return peDelegate;

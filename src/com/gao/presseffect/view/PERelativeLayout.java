@@ -11,6 +11,10 @@ import com.gao.presseffect.PEDelegate;
 public class PERelativeLayout extends RelativeLayout {
 	private final PEDelegate peDelegate = new PEDelegate(this);
 
+	{
+		setWillNotDraw(false);
+	}
+
 	public PEDelegate getDelegate() {
 		return peDelegate;
 	}
@@ -19,7 +23,7 @@ public class PERelativeLayout extends RelativeLayout {
 		super(context, attrs, defStyleAttr, defStyleRes);
 		peDelegate.read(context, attrs, defStyleAttr, defStyleRes);
 	}
-	
+
 	public PERelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
 		super(context, attrs, defStyleAttr);
 		peDelegate.read(context, attrs, defStyleAttr, 0);
